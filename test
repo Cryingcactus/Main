@@ -1,0 +1,9 @@
+var b = document.getElementById("button");
+var area = document.getElementById("area");
+b.addEventListener("click", function() {
+  var ourRequest = new XMLHttpRequest();
+  ourRequest.open('GET', 'https://raw.githubusercontent.com/Cryingcactus/Main/master/xfsnsaber?token=Asz_OaLNhmMtDZdv_T19jgI6cj-DM0Ugks5cSWVUwA%3D%3D');
+  ourRequest.onload = function() {
+area.insertAdjacentHTML('beforeend', ourRequest);
+}
+}
